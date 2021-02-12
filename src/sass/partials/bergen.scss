@@ -1,13 +1,12 @@
 .bergen {
     width: 90%;
-    background-color: #B1D9DD;
     margin: 0 auto;
+    border-right: 2px solid $salmon;
 
 
     &__column {
         float: left;
         width: 50%;
-        background-color: #B1D9DD;
         padding-bottom: 20px;
         height: 300px;
     }
@@ -21,7 +20,6 @@
         margin-top: -20px;
         float: left;
         width: 50%;
-        background-color: #B1D9DD;
         margin-bottom: 20px;
         height: 300px;
     }
@@ -34,6 +32,7 @@
     &__header {
         text-align: center;
         margin-top: 20px;
+        color: $salmon;
     }
 
     &__textleft {

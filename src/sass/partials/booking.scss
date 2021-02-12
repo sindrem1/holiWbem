@@ -1,9 +1,8 @@
 .booking {
     width: 70%;
-    background-color: #B1D9DD;
     text-align: center;
     margin: 0 auto;
-    border-left: 2px solid $salmon;
+    border: 2px solid $salmon;
     margin-top: 50px;
     height: 100%;
     display: flex;
@@ -12,7 +11,6 @@
         flex: 1;
         float: left;
         width: 50%;
-        background-color: #B1D9DD;
         height: 100%;
     }
 
