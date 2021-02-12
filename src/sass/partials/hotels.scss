@@ -16,12 +16,6 @@
   margin: 5px;
   border-left: 2px solid $salmon;
 
-
-  &__container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   &__img {
     width: 70%;
     height: 200px;
@@ -50,6 +44,19 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .hotel {
+    width: 49%;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+
+    border-left: 2px solid $salmon;
+  
   }
 }
 
