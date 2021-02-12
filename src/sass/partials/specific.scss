@@ -1,0 +1,92 @@
+.specific {
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-left: 2px solid $salmon;
+
+
+    &__left {
+    float: left;
+    width: 50%;
+    }
+
+    &__name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 350;
+        color: $salmon;
+    }
+      &__img {
+        width: 350px;
+        height: 190px;
+      }
+
+      &__info {
+          padding-top: 20px;
+      }
+
+      &__mail {
+        text-decoration: none;
+        color: black;
+    }
+
+      &__header {
+    color: $salmon;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+      }
+      &__btn {
+        background-color: #FFF;
+        border-style: solid;
+        border-color: $salmon;
+        border-width: 0.2px;
+        color: $salmon;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+}
+
+      .map {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        width: 40%;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-right: 2px solid $salmon;
+    }
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .specific {
+        width: 80%;
+        background-color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        border-left: 2px solid $salmon;
+        
+        &__left {
+        float: left;
+        width: 100%;
+        }
+    
+    }
+
+    .map {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 80%;
+        background-color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-right: 2px solid $salmon;
+    }
+}

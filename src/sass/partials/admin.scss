@@ -1,0 +1,37 @@
+.HotelAdmin {
+    width: 100%;
+    text-align: center;
+}
+
+
+.adminlogin {
+    height: 100%;
+    text-align: center;
+}
+
+.adminfield {
+    width: 50%;
+}
+
+
+.adminbook {
+    width: 100%;
+    
+    &__container {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    background-color: #B1D9DD;
+    }
+}
+
+.admincontact {
+    width: 100%;
+
+    &__contact {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    background-color: #B1D9DD;
+    }
+}

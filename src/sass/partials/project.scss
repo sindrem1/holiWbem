@@ -1,0 +1,29 @@
+$bgcolor: #FFF;
+$salmon:#7c3ddb;
+
+
+html, body, #root {
+    height: 100%;
+  }
+
+#root {
+    font-family: 'Lato', sans-serif;
+    background-color: $bgcolor;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.underhead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 350;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
