@@ -9,16 +9,16 @@
     display: flex;
 
     &__columns {
-    flex: 1;
-    float: left;
-    width: 50%;
-    background-color: #B1D9DD;
-    height: 100%;
+        flex: 1;
+        float: left;
+        width: 50%;
+        background-color: #B1D9DD;
+        height: 100%;
     }
 
     &__success {
-    color: green;
-    font-weight: bold;
+        color: green;
+        font-weight: bold;
     }
 
     &__name {
@@ -26,21 +26,22 @@
         font-weight: 350;
         color: $salmon;
     }
-      &__img {
+
+    &__img {
         width: 70%;
         margin-right: 20px;
         padding-bottom: 203px;
-      }
+    }
 
-      &__info {
-          padding-top: 20px;
-      }
+    &__info {
+        padding-top: 20px;
+    }
 
-      &__field {
-          width: 50%;
-      }
+    &__field {
+        width: 50%;
+    }
 
-      &__mail {
+    &__mail {
         text-decoration: none;
         color: black;
     }
@@ -49,12 +50,13 @@
         font-weight: bold;
     }
 
-      &__header {
-    color: $salmon;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 450;
-      }
-      &__btn {
+    &__header {
+        color: $salmon;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 450;
+    }
+
+    &__btn {
         background-color: #FFF;
         border-style: solid;
         border-color: $salmon;
@@ -78,17 +80,19 @@
         width: 90%;
         display: block;
 
-    &__columns {
-        display: block;
-        width: 100%;
-        height: 100%;
+        &__columns {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
-    &__img {
-        width: 50%;
-        padding-bottom: 0px;
-}
-&__field {
-    width: 80%;
-}
+
+        &__img {
+            width: 50%;
+            padding-bottom: 0px;
+        }
+
+        &__field {
+            width: 80%;
+        }
     }
 }

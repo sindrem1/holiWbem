@@ -5,25 +5,30 @@
     border-top: 2px solid $salmon;
     background-color: #B1D9DD;
     text-align: center;
+
     &__name {
         font-family: 'Montserrat', sans-serif;
         font-weight: 350;
         text-decoration: none;
     }
+
     a {
         text-decoration: none;
         color: black;
     }
-      &__img {
-    width: 20%;
-    height: 100px;
-      }
-      &__info {
-          padding-top: 20px;
-          text-decoration: none;
-          color: black;
-      }
-      &__btn {
+
+    &__img {
+        width: 20%;
+        height: 100px;
+    }
+
+    &__info {
+        padding-top: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    &__btn {
         background-color: #FFF;
         border-style: solid;
         border-color: $salmon;
