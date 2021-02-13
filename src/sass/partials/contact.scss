@@ -1,0 +1,89 @@
+.contact {
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid $salmon;
+  padding: 50px;
+
+  &__column {
+    float: left;
+    width: 50%;
+  }
+
+  &__pic {
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  &__txtfield {
+    height: 150px;
+  }
+
+  &__btn {
+    background-color: #FFF;
+    border-style: solid;
+    border-color: $salmon;
+    border-width: 0.2px;
+    color: $salmon;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+  &__success {
+    color: green;
+    font-weight: bold;
+  }
+}
+
+input,
+select,
+textarea {
+  color: black;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+
+    &__column {
+      float: left;
+      width: 100%;
+    }
+
+    &__pic {
+      width: 60%;
+      margin-top: 0px;
+    }
+
+    &__txtfield {
+      width: 90%;
+      height: 150px;
+    }
+
+    &__field {
+      width: 90%;
+    }
+  }
+
+}
