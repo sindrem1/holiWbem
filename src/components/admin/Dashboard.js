@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Dashboard() {
     return (
         <>
-        <div class="adminpanel">
+        <div className="adminpanel">
             <h1>Admin Panel</h1>
 
                     <NavLink to="/admin/hotels"><h2>Edit Hotels</h2></NavLink>
