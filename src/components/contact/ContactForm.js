@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { BASE_URL, headers } from "../../constants/api";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-import Contact from '../assets/contact.jpg'
+import Contact from '../assets/contact.png'
 
 const schema = yup.object().shape({
     name: yup.string().required("Please enter a name").min(2, "Name needs to be atleast 2 characters"),

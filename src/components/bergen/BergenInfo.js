@@ -1,7 +1,7 @@
 import React from "react";
-import Mountains from '../assets/mountains.jpg'
-import Fish from '../assets/fish.jpg'
-import Shop from '../assets/shop.jpg'
+import Mountains from '../assets/mountains.png'
+import Fish from '../assets/fish.png'
+import Shop from '../assets/shop.png'
 
 function BergenInfo() {
     return (

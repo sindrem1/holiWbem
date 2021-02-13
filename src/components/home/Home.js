@@ -2,10 +2,10 @@ import { React, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-import Food from '../assets/food.jpg'
-import Hotels from '../assets/hotels.jpg'
-import Explore from '../assets/explore.jpg'
-import Bergen from '../assets/bergen.jpg'
+import Food from '../assets/food.png'
+import Hotels from '../assets/hotels.png'
+import Explore from '../assets/explore.png'
+import Bergen from '../assets/bergen.png'
 
 const schema = yup.object().shape({
     email: yup.string().required('Email is required').email('Email is in a invalid format'),
