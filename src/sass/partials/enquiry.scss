@@ -19,7 +19,7 @@
 
     &__img {
         width: 20%;
-        height: 100px;
+        height: 140px;
     }
 
     &__info {
@@ -51,5 +51,9 @@
 
     .enquiry {
         width: 100%;
+        &__img {
+            width: 40%;
+            height: 200px;
+        }
     }
 }

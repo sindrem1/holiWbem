@@ -18,15 +18,19 @@ function Register() {
     }
 
     return (
+        <div className="adminlogin">
         <Form onSubmit={handleSubmit(onSubmit)}>
             <h1>Login</h1>
             <Form.Group>
-                <Form.Label>Name</Form.Label>
-                <Form.Control name="username" placeholder="Enter your username" ref={register} />
+                <Form.Label>Username:</Form.Label>
+                <Form.Control className="adminlogin__input" name="username" placeholder="Enter your username" ref={register} />
+                <Form.Label>Password:</Form.Label>
+                <Form.Control className="adminlogin__input" type="password" name="password" placeholder="Enter your password" ref={register} />
             </Form.Group>
 
             <Button type="submit">Submit</Button>
         </Form>
+        </div>
     );
 }
 

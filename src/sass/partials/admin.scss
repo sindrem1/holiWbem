@@ -36,6 +36,19 @@
     }
 }
 
+.admin_addhotel {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.adminlogin {
+    width: 20%;
+    margin: 0 auto;
+    &__input {
+       width: 100%; 
+}
+}
+
 @media only screen and (max-width: 900px) {
 .adminbook {
     width: 100%;

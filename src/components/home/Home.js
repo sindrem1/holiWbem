@@ -28,12 +28,12 @@ function Home() {
     }
     return (
         <div className="home">
+            <div className="home__mobile">
+            <h1>Welcome to Bergen</h1>
+            <h3>Home away from home</h3>
+            </div>
             <img src={Bergen} alt="hotels" className="home__img" />
             <div className="home__welcome">
-                <h1>Welcome to Bergen</h1>
-                <h3>Home away from home</h3>
-            </div>
-            <div className="home__mobile">
                 <h1>Welcome to Bergen</h1>
                 <h3>Home away from home</h3>
             </div>

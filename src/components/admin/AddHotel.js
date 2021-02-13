@@ -22,7 +22,7 @@ function AddHotel() {
     }
 
     return (
-        <div className="HotelAdmin"> 
+        <div className="admin_addhotel"> 
         <form onSubmit={handleSubmit(onSubmit)}>
         <p>Name:</p> <input className="adminfield" name="name" placeholder="Hotel name" ref={register} />
 
