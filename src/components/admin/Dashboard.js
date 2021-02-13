@@ -4,21 +4,18 @@ import { NavLink } from "react-router-dom";
 function Dashboard() {
     return (
         <>
+        <div class="adminpanel">
             <h1>Admin Panel</h1>
-            <ul>
-                <li>
-                    <NavLink to="/admin/hotels">Edit Hotels</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/admin/hotels/add">Add New Hotel</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/admin/bookings">Bookings</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/admin/contacts">Contactforms</NavLink>
-                </li>
-            </ul>
+
+                    <NavLink to="/admin/hotels"><h2>Edit Hotels</h2></NavLink>
+
+                    <NavLink to="/admin/hotels/add"><h2>Add New Hotel</h2></NavLink>
+
+                    <NavLink to="/admin/bookings"><h2>Bookings</h2></NavLink>
+
+                    <NavLink to="/admin/contacts"><h2>Contactforms</h2></NavLink>
+
+            </div>
         </>
     );
 }

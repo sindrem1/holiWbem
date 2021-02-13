@@ -24,14 +24,14 @@ function CheckContact() {
  
     return (
         <>
-            
+            <div className="contactspec">
             <h2>{contact.name}</h2>
             <p>Email: {contact.email}</p>
             <p>Message: {contact.message}</p>
             <p>Id: {contact.id}</p>
             <p>Contacted at: {contact.createdAt}</p>
-            <a href={`mailto:${contact.email}?subject=Holidaze update on ${contact.id}&body= ${contact.message}`}> Answer</a>
             <DeleteContact id={id} />
+            </div>
         </>
     );
 }

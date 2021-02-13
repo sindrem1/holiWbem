@@ -22,7 +22,7 @@ function AddHotel() {
     }
 
     return (
-        <div className="admin_addhotel"> 
+        <div className="HotelAdmin">
         <form onSubmit={handleSubmit(onSubmit)}>
         <p>Name:</p> <input className="adminfield" name="name" placeholder="Hotel name" ref={register} />
 
@@ -41,11 +41,11 @@ function AddHotel() {
         <p>Descripton:</p> <textarea className="adminfield" name="description" placeholder="Description" ref={register} />
 
         <p>Self Catering:</p>
-        <input type='radio' name='selfCatering'  value='true' ref={register}/>True
-        <input type='radio' name='selfCatering'  value='false' ref={register}/> False
+        <input type='radio' name='selfCatering'  value='true' ref={register}/><p>True</p>
+        <input type='radio' name='selfCatering'  value='false' ref={register}/> <p>False</p>
 
-
-        <input className="submit" type="submit" />
+        <br/>
+        <input className="adminfield" type="submit" />
     </form>
     </div>
     );

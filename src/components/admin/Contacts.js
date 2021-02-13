@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { BASE_URL, headers } from "../../constants/api";
+import "react-confirm-alert/src/react-confirm-alert.css";
 
 function Contacts() {
     const [contacts, setContacts] = useState([]);
     const [error, setError] = useState(null);
 
     const url = BASE_URL + "contacts";
+
 
     const options = { headers };
 
@@ -40,8 +42,8 @@ function Contacts() {
                                     <p>Email: {contacts.email}</p>
                                     <p>Message: {contacts.message}</p>
                                     <p>Sent at: {contacts.createdAt}</p>
-                                    
-                                    <NavLink to={`/admin/contacts/details/${contacts.id}`}>More details</NavLink>
+                                    <a href={`mailto:${contacts.email}?subject=Holidaze update on ${contacts.id}&body= ${contacts.message}`}> Answer</a>
+                                    <NavLink to={`/admin/contacts/details/${contacts.id}`}><p>More details</p></NavLink>
                         </li>
                     );
                 })}

@@ -6,6 +6,7 @@ import Food from '../assets/food.png'
 import Hotels from '../assets/hotels.png'
 import Explore from '../assets/explore.png'
 import Bergen from '../assets/bergen.png'
+import { NavLink } from "react-router-dom";
 
 const schema = yup.object().shape({
     email: yup.string().required('Email is required').email('Email is in a invalid format'),
@@ -41,13 +42,13 @@ function Home() {
 
                 <div className="homerows">
                     <div className="homerows__columns">
-                        <img src={Food} alt="contact" className="homerows__img" />
+                    <NavLink to="/hotels"> <img src={Food} alt="contact" className="homerows__img" /></NavLink>   
                     </div>
                     <div className="homerows__columns">
-                        <img src={Hotels} alt="hotels" className="homerows__img" />
+                    <NavLink to="/booking"> <img src={Hotels} alt="hotels" className="homerows__img" /></NavLink> 
                     </div>
                     <div className="homerows__columns">
-                        <img src={Explore} alt="bergen" className="homerows__img" />
+                    <NavLink to="/bergen"> <img src={Explore} alt="bergen" className="homerows__img" /></NavLink> 
                     </div>
                 </div>
             <div className="info">
