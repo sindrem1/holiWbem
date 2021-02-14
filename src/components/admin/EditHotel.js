@@ -66,9 +66,6 @@ function AddHotel() {
         <input type='radio' name='selfCatering'  value='true' ref={register}/><p>True</p>
         <input type='radio' name='selfCatering'  value='false' ref={register}/> <p>False</p>
         
-
-        <input className="adminfield" name="SelfCatering" defaultValue={hotel.SelfCatering}/>
-
         <p>Description:</p>
         <textarea className="adminfield" name="description" defaultValue={hotel.description} placeholder="Description" ref={register} />
 
