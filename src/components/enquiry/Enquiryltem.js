@@ -17,7 +17,7 @@ function EnquiryItem({ id, name, image, price, maxGuests, description }) {
       </div>
     </Link>
       <Link to={"hotel/" + id}>
-        <button className="enquiry__btn">View Hotel</button>
+        <button className="enquiry__btn">Info</button>
       </Link>
     </div>
   );

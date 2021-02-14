@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { BASE_URL, headers } from "../../constants/api";
 import { yupResolver } from '@hookform/resolvers/yup';
+import { NavLink } from "react-router-dom";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
@@ -68,17 +69,16 @@ function EnquiryForm() {
             <div className="booking">
                 <div className="booking__columns">
                     <p>Hotel:</p>
-                    <p>{info.name}</p>
+                    <NavLink to={`/hotel/${info.id}`}><p>{info.name}</p></NavLink>
                     <p>Price per night:</p>
                     <p>{info.price} &euro;</p>
-
-                    <img className="booking__img" src={info.image} alt="thumbnail for hotel"/>
+                    <img className="booking__img" src={info.image} alt="thumbnail for hotel" />
                 </div>
 
                 <div className="booking__columns">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <p className="booking__success">{bookSucc}</p>
-                       <p>Name:</p> <input className="booking__field" name="name" placeholder="Your name" ref={register} />
+                        <p>Name:</p> <input className="booking__field" name="name" placeholder="Your name" ref={register} />
                         {errors.name && <p className="error">{errors.name.message}</p>}
 
                         <p>Email:</p><input className="booking__field" name="email" type="email" placeholder="Mail@mail.com" ref={register} />
@@ -99,6 +99,6 @@ function EnquiryForm() {
             </div>
         </div>
     );
-    }
+}
 
 export default EnquiryForm;

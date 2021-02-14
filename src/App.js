@@ -17,7 +17,7 @@ import Contacts from "./components/admin/Contacts";
 import CheckContact from "./components/admin/CheckContact";
 import Dashboard from "./components/admin/Dashboard";
 import Nav from "./components/layout/Nav";
-import AdminNav from "./components/layout/adminNav";
+import AdminNav from "./components/layout/AdminNav";
 import Contact from "./components/contact/Contact";
 import Hotelspecifics from "./components/hotels/HotelSpecific"
 import Booking from "./components/enquiry/Enquiry"
