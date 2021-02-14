@@ -60,17 +60,24 @@ function AddHotel() {
         <p>Longitude:</p>
         <input className="adminfield" name="lng" defaultValue={hotel.lng} placeholder="Example: 6.228147" ref={register} />
 
+
         <p>Self Catering:</p>
-        <input className="adminfield" name="SelfCatering" defaultValue={hotel.SelfCatering} ref={register} />
+        <p><b>If left with no boxes marked will stay at value it had.</b></p>
+        <input type='radio' name='selfCatering'  value='true' ref={register}/><p>True</p>
+        <input type='radio' name='selfCatering'  value='false' ref={register}/> <p>False</p>
+        
+
+        <input className="adminfield" name="SelfCatering" defaultValue={hotel.SelfCatering}/>
 
         <p>Description:</p>
         <textarea className="adminfield" name="description" defaultValue={hotel.description} placeholder="Description" ref={register} />
 
 
 
-
-        <input className="submit" type="submit" />
+        <br/>
+        <input className="adminfield" type="submit" />
     </form>
+    <br/>
             <DeleteHotel id={id} />
             </div>
         </>

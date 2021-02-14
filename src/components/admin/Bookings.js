@@ -31,12 +31,12 @@ function Bookings() {
         <>
             <div className="adminbook">
             <div className="adminbook__container">
-            <h1 className="adminbook__title">Bookings</h1>
+            <h1>Bookings</h1>
             {error && <div className="error">{error}</div>}
                 {bookings.map((bookings) => {
                     return (
                         <div key={bookings.id}>
-                                   <h2>{bookings.name}</h2>
+                                   <h2 className="adminbook__title">{bookings.name}</h2>
                                    <NavLink to={`/hotel/${bookings.establishmentId}`}><p>Hotel: {bookings.establishmentId}</p></NavLink>       
                                     <p>Check-in: {bookings.checkIn}</p>
                                     <p>Check-out: {bookings.checkOut}</p>

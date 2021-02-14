@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => (
   <div className="footer">
+    <div className="footer__content">
     <div className="footer__columns">
     <p className="footer__left">Holidaze</p>
     <p className="footer__left">Bryggen 1, 5020 Bergen</p>
@@ -22,7 +23,7 @@ const Footer = () => (
     <div className="footer__columns">
       <p className="footer__right"><NavLink to="#">Terms of Service</NavLink> <NavLink to="#">Privacy Policy</NavLink></p>
       </div>
-
+      </div>
   </div>
 );
 

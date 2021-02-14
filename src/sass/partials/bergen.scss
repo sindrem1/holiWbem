@@ -36,9 +36,24 @@
         color: $salmon;
     }
 
-    &__textleft {
+    &__text {
         margin-left: 10px;
         padding-top: 10px;
+    }
+    &__text {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+
+    .bergen {
+        width: 90%;
+
+    &__text {
+        margin-top: 50px;
+        }
     }
 }
 
@@ -69,6 +84,5 @@
             width: 70%;
             padding-left: 0px;
         }
-
     }
 }

@@ -1,13 +1,16 @@
 .adminpanel {
-    width: 90%;
+    width: 50%;
     text-align: center;
     margin:0 auto;
+    border-left: 2px solid $salmon;
+    border-right: 2px solid $salmon;
 }
 
 .HotelAdmin {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    border: 2px solid $salmon;
 }
 
 
@@ -28,12 +31,18 @@
 
 
 .adminbook {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 
     &__container {
         margin: 0 auto;
         text-align: center;
         width: 70%;
+        border: 2px solid $salmon;
+    }
+
+    &__title {
+        color: $salmon;
     }
 }
 
@@ -44,12 +53,17 @@
 }
 
 .admincontact {
-    width: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
 
     &__contact {
+        border-top: 2px solid $salmon;
+        border-bottom: 2px solid $salmon;
         margin: 0 auto;
         text-align: center;
         width: 70%;
+        list-style: none;
     }
 }
 
