@@ -6,7 +6,7 @@ import Logout from "../auth/Logout";
 function AdminNav() {
     const { user } = useContext(AuthContext);
     return (
-        <div className="adminbtn">
+        <div className="admin">
             {user ? (
                 <>
                     <NavLink to="/admin">Admin</NavLink>
