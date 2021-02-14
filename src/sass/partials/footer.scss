@@ -1,6 +1,11 @@
 .footer {
   width: 100%;
 
+  &__content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   &__columns {
     float: left;
     width: 33%;
